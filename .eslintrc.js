@@ -4,7 +4,7 @@ const { walkForTsConfig } = require('tsconfig-paths/lib/tsconfig-loader');
 
 const ROOT = __dirname;
 
-export function getTsConfigPath() {
+function getTsConfigPath() {
   let cachedLookup = walkForTsConfig(process.cwd());
 
   // If a `tsconfig.eslint.json` exists in the same folder,
@@ -20,7 +20,7 @@ export function getTsConfigPath() {
   return cachedLookup;
 }
 
-export function getEslintParserOptions() {
+function getEslintParserOptions() {
   const tsConfigPath = getTsConfigPath();
   const project = [];
 
@@ -53,4 +53,13 @@ module.exports = {
   extends: ['beemo', 'beemo/browser', 'beemo/react'],
   parserOptions,
   reportUnusedDisableDirectives: true,
+  rules: {
+    // Disabled for generated code
+    '@typescript-eslint/no-confusing-void-expression': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    'import/no-default-export': 'off',
+    'no-magic-numbers': 'off',
+    'react/self-closing-comp': 'off',
+    'simple-import-sort/imports': 'off',
+  },
 };

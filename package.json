@@ -2,7 +2,9 @@
   "private": true,
   "name": "typescript-eslint-single-run",
   "scripts": {
-    "format": "prettier --write ./apps"
+    "format": "prettier --write ./apps",
+    "lint:app": "yarn workspace apps-main run eslint --ext .ts,.tsx,.js,.jsx --exit-on-fatal-error --report-unused-disable-directives --no-error-on-unmatched-pattern .",
+    "lint:root": "eslint --ext .ts,.tsx,.js,.jsx --exit-on-fatal-error --report-unused-disable-directives --no-error-on-unmatched-pattern ."
   },
   "workspaces": [
     "apps/*"
@@ -13,6 +15,7 @@
     "lodash": "^4.17.21",
     "prettier": "^2.6.2",
     "random-words": "^1.1.2",
-    "tsconfig-paths": "^4.0.0"
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.7.2"
   }
 }

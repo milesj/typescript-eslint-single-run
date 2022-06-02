@@ -10,14 +10,14 @@ const HOOKS = ['useState', 'useMemo', 'useRef', 'useEffect', 'useCallback'];
 
 function createReactHook(hook) {
   if (hook === 'useMemo' || hook === 'useCallback') {
-    return `${hook}(() => 123, [])`;
+    return `const handler = ${hook}(() => 123, []);`;
   }
 
   if (hook === 'useEffect') {
-    return `${hook}(() => {}, [])`;
+    return `${hook}(() => {}, []);`;
   }
 
-  return `${hook}()`;
+  return `const value = ${hook}('abc');`;
 }
 
 function createReactComponent(name, source, imports = []) {
@@ -38,7 +38,7 @@ function createReactComponent(name, source, imports = []) {
 
   component += `
 export default function ${name}() {
-	const value = ${createReactHook(hook)};
+	${createReactHook(hook)}
 
 	return <div>${children}</div>;
 }`;
