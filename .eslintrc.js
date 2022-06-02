@@ -56,6 +56,7 @@ module.exports = {
   rules: {
     // Disabled for generated code
     '@typescript-eslint/no-confusing-void-expression': 'off',
+    '@typescript-eslint/no-redeclare': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     'import/no-default-export': 'off',
     'no-magic-numbers': 'off',
