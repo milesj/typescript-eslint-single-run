@@ -11,7 +11,20 @@ import Young from '../Young';
 import They from '../kill/They';
 
 export default function Rate() {
-	const value = useEffect(() => {}, []);
+  const value = useEffect(() => {}, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /><Young /><They /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+      <Young />
+      <They />
+    </div>
+  );
 }

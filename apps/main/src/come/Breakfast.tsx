@@ -9,7 +9,18 @@ import Which from '../saved/strip/Which';
 import Past from '../saved/height/Past';
 
 export default function Breakfast() {
-	const value = useCallback(() => 123, []);
+  const value = useCallback(() => 123, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+    </div>
+  );
 }

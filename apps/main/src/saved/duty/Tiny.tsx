@@ -5,7 +5,14 @@ import Trunk from '../type/Trunk';
 import Melted from '../milk/Melted';
 
 export default function Tiny() {
-	const value = useMemo(() => 123, []);
+  const value = useMemo(() => 123, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+    </div>
+  );
 }

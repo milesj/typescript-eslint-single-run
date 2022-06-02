@@ -14,7 +14,23 @@ import Refer from '../fun/Refer';
 import Product from '../measure/Product';
 
 export default function Nodded() {
-	const value = useEffect(() => {}, []);
+  const value = useEffect(() => {}, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /><Young /><They /><Rate /><Refer /><Product /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+      <Young />
+      <They />
+      <Rate />
+      <Refer />
+      <Product />
+    </div>
+  );
 }

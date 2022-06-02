@@ -4,7 +4,13 @@ import Start from '../Start';
 import Trunk from '../type/Trunk';
 
 export default function Student() {
-	const value = useMemo(() => 123, []);
+  const value = useMemo(() => 123, []);
 
-	return <div><Warn /><Start /><Trunk /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+    </div>
+  );
 }

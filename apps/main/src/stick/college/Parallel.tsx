@@ -20,7 +20,29 @@ import Present from '../../rest/captured/Present';
 import Adult from '../Adult';
 
 export default function Parallel() {
-	const value = useMemo(() => 123, []);
+  const value = useMemo(() => 123, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /><Young /><They /><Rate /><Refer /><Product /><Brush /><Press /><Trace /><Bowl /><Present /><Adult /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+      <Young />
+      <They />
+      <Rate />
+      <Refer />
+      <Product />
+      <Brush />
+      <Press />
+      <Trace />
+      <Bowl />
+      <Present />
+      <Adult />
+    </div>
+  );
 }

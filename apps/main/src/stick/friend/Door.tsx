@@ -21,7 +21,30 @@ import Adult from '../Adult';
 import Slight from '../college/Slight';
 
 export default function Door() {
-	const value = useState();
+  const value = useState();
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /><Young /><They /><Rate /><Refer /><Product /><Brush /><Press /><Trace /><Bowl /><Present /><Adult /><Slight /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+      <Young />
+      <They />
+      <Rate />
+      <Refer />
+      <Product />
+      <Brush />
+      <Press />
+      <Trace />
+      <Bowl />
+      <Present />
+      <Adult />
+      <Slight />
+    </div>
+  );
 }

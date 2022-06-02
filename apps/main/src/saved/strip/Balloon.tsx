@@ -7,7 +7,16 @@ import Magic from '../duty/Magic';
 import Softly from '../threw/Softly';
 
 export default function Balloon() {
-	const value = useCallback(() => 123, []);
+  const value = useCallback(() => 123, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+    </div>
+  );
 }

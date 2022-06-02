@@ -11,7 +11,20 @@ import Young from '../Young';
 import They from '../kill/They';
 
 export default function Metal() {
-	const value = useState();
+  const value = useState();
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /><Young /><They /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+      <Young />
+      <They />
+    </div>
+  );
 }

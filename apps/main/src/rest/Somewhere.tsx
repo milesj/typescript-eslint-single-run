@@ -15,7 +15,24 @@ import Product from '../come/measure/Product';
 import Brush from '../come/lying/Brush';
 
 export default function Somewhere() {
-	const value = useState();
+  const value = useState();
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /><Young /><They /><Rate /><Refer /><Product /><Brush /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+      <Young />
+      <They />
+      <Rate />
+      <Refer />
+      <Product />
+      <Brush />
+    </div>
+  );
 }

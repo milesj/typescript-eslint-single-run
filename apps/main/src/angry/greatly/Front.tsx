@@ -30,7 +30,39 @@ import Herself from '../../load/smile/Herself';
 import Prize from '../Prize';
 
 export default function Front() {
-	const value = useMemo(() => 123, []);
+  const value = useMemo(() => 123, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /><Young /><They /><Rate /><Refer /><Product /><Brush /><Press /><Trace /><Bowl /><Present /><Adult /><Slight /><Door /><Country /><Your /><Flight /><Sight /><End /><Number /><Herself /><Prize /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+      <Young />
+      <They />
+      <Rate />
+      <Refer />
+      <Product />
+      <Brush />
+      <Press />
+      <Trace />
+      <Bowl />
+      <Present />
+      <Adult />
+      <Slight />
+      <Door />
+      <Country />
+      <Your />
+      <Flight />
+      <Sight />
+      <End />
+      <Number />
+      <Herself />
+      <Prize />
+    </div>
+  );
 }

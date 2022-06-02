@@ -16,7 +16,25 @@ import Brush from '../../come/lying/Brush';
 import Press from '../Press';
 
 export default function Beside() {
-	const value = useEffect(() => {}, []);
+  const value = useEffect(() => {}, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /><Young /><They /><Rate /><Refer /><Product /><Brush /><Press /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+      <Young />
+      <They />
+      <Rate />
+      <Refer />
+      <Product />
+      <Brush />
+      <Press />
+    </div>
+  );
 }

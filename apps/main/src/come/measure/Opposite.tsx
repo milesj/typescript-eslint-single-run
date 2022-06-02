@@ -13,7 +13,22 @@ import Rate from '../ask/Rate';
 import Refer from '../fun/Refer';
 
 export default function Opposite() {
-	const value = useMemo(() => 123, []);
+  const value = useMemo(() => 123, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /><Young /><They /><Rate /><Refer /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+      <Young />
+      <They />
+      <Rate />
+      <Refer />
+    </div>
+  );
 }

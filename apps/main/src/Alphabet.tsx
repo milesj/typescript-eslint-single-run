@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 
 export default function Alphabet() {
-	const value = useRef();
+  const value = useRef();
 
-	return <div></div>;
+  return <div></div>;
 }

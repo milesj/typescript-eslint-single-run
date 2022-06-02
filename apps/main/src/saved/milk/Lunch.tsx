@@ -4,7 +4,13 @@ import Start from '../Start';
 import Trunk from '../type/Trunk';
 
 export default function Lunch() {
-	const value = useState();
+  const value = useState();
 
-	return <div><Warn /><Start /><Trunk /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+    </div>
+  );
 }

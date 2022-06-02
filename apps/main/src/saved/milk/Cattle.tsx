@@ -4,7 +4,13 @@ import Start from '../Start';
 import Trunk from '../type/Trunk';
 
 export default function Cattle() {
-	const value = useRef();
+  const value = useRef();
 
-	return <div><Warn /><Start /><Trunk /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+    </div>
+  );
 }

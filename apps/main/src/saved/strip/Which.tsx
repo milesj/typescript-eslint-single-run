@@ -7,7 +7,16 @@ import Magic from '../duty/Magic';
 import Softly from '../threw/Softly';
 
 export default function Which() {
-	const value = useEffect(() => {}, []);
+  const value = useEffect(() => {}, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+    </div>
+  );
 }

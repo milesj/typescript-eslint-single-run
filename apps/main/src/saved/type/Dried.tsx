@@ -3,7 +3,12 @@ import Warn from '../../Warn';
 import Start from '../Start';
 
 export default function Dried() {
-	const value = useRef();
+  const value = useRef();
 
-	return <div><Warn /><Start /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+    </div>
+  );
 }

@@ -10,7 +10,19 @@ import Past from '../../saved/height/Past';
 import Young from '../Young';
 
 export default function Sunlight() {
-	const value = useCallback(() => 123, []);
+  const value = useCallback(() => 123, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /><Young /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+      <Young />
+    </div>
+  );
 }

@@ -9,7 +9,18 @@ import Which from '../saved/strip/Which';
 import Past from '../saved/height/Past';
 
 export default function Else() {
-	const value = useState();
+  const value = useState();
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+    </div>
+  );
 }

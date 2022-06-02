@@ -18,7 +18,27 @@ import Trace from '../adjective/Trace';
 import Bowl from '../decide/Bowl';
 
 export default function Wool() {
-	const value = useCallback(() => 123, []);
+  const value = useCallback(() => 123, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /><Young /><They /><Rate /><Refer /><Product /><Brush /><Press /><Trace /><Bowl /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+      <Young />
+      <They />
+      <Rate />
+      <Refer />
+      <Product />
+      <Brush />
+      <Press />
+      <Trace />
+      <Bowl />
+    </div>
+  );
 }

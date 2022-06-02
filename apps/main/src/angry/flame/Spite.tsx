@@ -33,7 +33,42 @@ import Having from '../party/Having';
 import Lead from '../very/Lead';
 
 export default function Spite() {
-	const value = useState();
+  const value = useState();
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /><Young /><They /><Rate /><Refer /><Product /><Brush /><Press /><Trace /><Bowl /><Present /><Adult /><Slight /><Door /><Country /><Your /><Flight /><Sight /><End /><Number /><Herself /><Prize /><Possible /><Having /><Lead /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+      <Young />
+      <They />
+      <Rate />
+      <Refer />
+      <Product />
+      <Brush />
+      <Press />
+      <Trace />
+      <Bowl />
+      <Present />
+      <Adult />
+      <Slight />
+      <Door />
+      <Country />
+      <Your />
+      <Flight />
+      <Sight />
+      <End />
+      <Number />
+      <Herself />
+      <Prize />
+      <Possible />
+      <Having />
+      <Lead />
+    </div>
+  );
 }

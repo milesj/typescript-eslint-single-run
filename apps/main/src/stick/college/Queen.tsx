@@ -20,7 +20,29 @@ import Present from '../../rest/captured/Present';
 import Adult from '../Adult';
 
 export default function Queen() {
-	const value = useRef();
+  const value = useRef();
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /><Young /><They /><Rate /><Refer /><Product /><Brush /><Press /><Trace /><Bowl /><Present /><Adult /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+      <Young />
+      <They />
+      <Rate />
+      <Refer />
+      <Product />
+      <Brush />
+      <Press />
+      <Trace />
+      <Bowl />
+      <Present />
+      <Adult />
+    </div>
+  );
 }

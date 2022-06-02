@@ -6,7 +6,15 @@ import Melted from '../milk/Melted';
 import Magic from '../duty/Magic';
 
 export default function Course() {
-	const value = useMemo(() => 123, []);
+  const value = useMemo(() => 123, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+    </div>
+  );
 }

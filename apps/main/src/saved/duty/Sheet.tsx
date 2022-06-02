@@ -5,7 +5,14 @@ import Trunk from '../type/Trunk';
 import Melted from '../milk/Melted';
 
 export default function Sheet() {
-	const value = useEffect(() => {}, []);
+  const value = useEffect(() => {}, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+    </div>
+  );
 }

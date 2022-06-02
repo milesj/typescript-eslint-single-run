@@ -27,7 +27,36 @@ import Sight from '../suggest/Sight';
 import End from '../duty/End';
 
 export default function Total() {
-	const value = useState();
+  const value = useState();
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /><Young /><They /><Rate /><Refer /><Product /><Brush /><Press /><Trace /><Bowl /><Present /><Adult /><Slight /><Door /><Country /><Your /><Flight /><Sight /><End /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+      <Young />
+      <They />
+      <Rate />
+      <Refer />
+      <Product />
+      <Brush />
+      <Press />
+      <Trace />
+      <Bowl />
+      <Present />
+      <Adult />
+      <Slight />
+      <Door />
+      <Country />
+      <Your />
+      <Flight />
+      <Sight />
+      <End />
+    </div>
+  );
 }

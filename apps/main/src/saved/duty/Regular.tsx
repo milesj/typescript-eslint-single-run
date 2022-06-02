@@ -5,7 +5,14 @@ import Trunk from '../type/Trunk';
 import Melted from '../milk/Melted';
 
 export default function Regular() {
-	const value = useCallback(() => 123, []);
+  const value = useCallback(() => 123, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+    </div>
+  );
 }

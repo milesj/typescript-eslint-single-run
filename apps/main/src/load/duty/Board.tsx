@@ -26,7 +26,35 @@ import Flight from '../Flight';
 import Sight from '../suggest/Sight';
 
 export default function Board() {
-	const value = useEffect(() => {}, []);
+  const value = useEffect(() => {}, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /><Past /><Young /><They /><Rate /><Refer /><Product /><Brush /><Press /><Trace /><Bowl /><Present /><Adult /><Slight /><Door /><Country /><Your /><Flight /><Sight /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+      <Past />
+      <Young />
+      <They />
+      <Rate />
+      <Refer />
+      <Product />
+      <Brush />
+      <Press />
+      <Trace />
+      <Bowl />
+      <Present />
+      <Adult />
+      <Slight />
+      <Door />
+      <Country />
+      <Your />
+      <Flight />
+      <Sight />
+    </div>
+  );
 }

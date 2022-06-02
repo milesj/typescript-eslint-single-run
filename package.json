@@ -1,6 +1,9 @@
 {
   "private": true,
   "name": "typescript-eslint-single-run",
+  "scripts": {
+    "format": "prettier --write ./apps"
+  },
   "workspaces": [
     "apps/*"
   ],

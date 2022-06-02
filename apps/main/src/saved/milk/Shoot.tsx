@@ -4,7 +4,13 @@ import Start from '../Start';
 import Trunk from '../type/Trunk';
 
 export default function Shoot() {
-	const value = useEffect(() => {}, []);
+  const value = useEffect(() => {}, []);
 
-	return <div><Warn /><Start /><Trunk /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+    </div>
+  );
 }

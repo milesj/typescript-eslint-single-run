@@ -7,7 +7,16 @@ import Magic from '../duty/Magic';
 import Softly from '../threw/Softly';
 
 export default function White() {
-	const value = useState();
+  const value = useState();
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+    </div>
+  );
 }

@@ -6,7 +6,15 @@ import Melted from '../milk/Melted';
 import Magic from '../duty/Magic';
 
 export default function Tube() {
-	const value = useEffect(() => {}, []);
+  const value = useEffect(() => {}, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+    </div>
+  );
 }

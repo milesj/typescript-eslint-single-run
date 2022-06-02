@@ -8,7 +8,17 @@ import Softly from '../threw/Softly';
 import Which from '../strip/Which';
 
 export default function Chapter() {
-	const value = useEffect(() => {}, []);
+  const value = useEffect(() => {}, []);
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /><Softly /><Which /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+      <Softly />
+      <Which />
+    </div>
+  );
 }

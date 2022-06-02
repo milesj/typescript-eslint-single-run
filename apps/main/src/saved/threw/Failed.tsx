@@ -6,7 +6,15 @@ import Melted from '../milk/Melted';
 import Magic from '../duty/Magic';
 
 export default function Failed() {
-	const value = useRef();
+  const value = useRef();
 
-	return <div><Warn /><Start /><Trunk /><Melted /><Magic /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+      <Trunk />
+      <Melted />
+      <Magic />
+    </div>
+  );
 }

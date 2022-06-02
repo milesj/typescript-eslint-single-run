@@ -3,7 +3,12 @@ import Warn from '../../Warn';
 import Start from '../Start';
 
 export default function Enjoy() {
-	const value = useEffect(() => {}, []);
+  const value = useEffect(() => {}, []);
 
-	return <div><Warn /><Start /></div>;
+  return (
+    <div>
+      <Warn />
+      <Start />
+    </div>
+  );
 }

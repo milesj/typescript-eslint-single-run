@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 export default function These() {
-	const value = useEffect(() => {}, []);
+  const value = useEffect(() => {}, []);
 
-	return <div></div>;
+  return <div></div>;
 }
