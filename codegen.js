@@ -4,8 +4,8 @@ const fs = require('fs');
 const _ = require('lodash');
 
 const ROOT = __dirname;
-const APP_ROOT = path.join(__dirname, 'apps/main');
-
+const SRC_ROOT = path.join(ROOT, 'apps/main/src');
+const MAX_DEPTH = 3;
 const HOOKS = ['useState', 'useMemo', 'useRef', 'useEffect', 'useCallback'];
 
 function createReactHook(hook) {
@@ -20,42 +20,62 @@ function createReactHook(hook) {
   return `${hook}()`;
 }
 
-function createReactComponent(name) {
+function createReactComponent(name, source, imports = []) {
   const index = _.random(0, HOOKS.length - 1);
   const hook = HOOKS[index];
 
-  return `
-import React, { ${hook} } from 'react';
+  let component = `import React, { ${hook} } from 'react';\n`;
+  let children = '';
 
+  imports.forEach((imp) => {
+    component += `import ${imp.fileName} from '${path.relative(
+      path.dirname(source),
+      imp.filePath.replace('.tsx', ''),
+    )}';\n`;
+
+    children += `<${imp.fileName} />`;
+  });
+
+  component += `
 export default function ${name}() {
 	const value = ${createReactHook(hook)};
 
-	return <div />;
-}
-	`;
+	return <div>${children}</div>;
+}`;
+
+  return component;
 }
 
-function generateFiles(dir, depth) {
-  if (depth === 5) {
-    return;
-  }
+function generateFiles(dir, depth, imports) {
+  fs.mkdirSync(dir, { recursive: true });
 
   const files = randomWords({ min: 10, max: 30 });
 
-  files.forEach((file) => {
+  files.forEach((file, index) => {
     const fileName = _.startCase(file);
     const filePath = path.join(dir, `${fileName}.tsx`);
 
-    fs.writeFileSync(filePath, createReactComponent(fileName), 'utf8');
+    fs.writeFileSync(filePath, createReactComponent(fileName, filePath, imports), 'utf8');
+
+    if (index === files.length - 1) {
+      imports.push({ fileName, filePath });
+    }
   });
 
-  // const folders = randomWords({ min: 3, max: 6 });
+  // Avoid creating super deep and empty folders
+  if (depth + 1 === MAX_DEPTH) {
+    return;
+  }
 
-  // folders.forEach((folder) => {
-  //   const folderPath = path.join(dir, folder);
+  const folders = randomWords({ min: 3, max: 6 });
 
-  //   fs.mkdirSync(folderPath, { recursive: true });
-  // });
+  folders.forEach((folder) => {
+    generateFiles(path.join(dir, folder), depth + 1, imports);
+  });
 }
 
-generateFiles(APP_ROOT);
+try {
+  fs.rmSync(SRC_ROOT, { force: true, recursive: true });
+} catch {}
+
+generateFiles(SRC_ROOT, 0, []);
