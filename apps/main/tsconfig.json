@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.projectOptions.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "outDir": "../../.nx/dts/apps/main"
+  },
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "dts",
+    "lib"
+  ]
+}

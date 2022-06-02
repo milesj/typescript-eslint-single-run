@@ -1,9 +1,15 @@
 {
+  "private": true,
   "name": "typescript-eslint-single-run",
+  "workspaces": [
+    "apps/*"
+  ],
   "devDependencies": {
     "eslint": "^8.16.0",
     "eslint-config-beemo": "^2.1.1",
+    "lodash": "^4.17.21",
     "prettier": "^2.6.2",
+    "random-words": "^1.1.2",
     "tsconfig-paths": "^4.0.0"
   }
 }
