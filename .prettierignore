@@ -1,0 +1,24 @@
+**/android/**
+**/coverage/**
+**/dist/**
+**/dist-commonjs/**
+**/ios/*
+**/node_modules/**
+**/localization/**/*.json
+**/lottie/*.json
+**/vendor/**
+**/__generated__/**
+**/persisted_queries.json
+schema.graphql
+.bundle
+**/*.sh
+.gitignore
+*.d.ts
+
+# Nx
+dts/
+lib/
+esm/
+package.json
+tsconfig.json
+tsconfig.*.json

@@ -1,0 +1,16 @@
+**/dist/**
+**/vendor/**
+**/node_modules/**
+**/build/**
+**/coverage/**
+**/dist-commonjs/**
+**/__generated__/**
+**/persisted_queries.json
+**/android/**
+**/ios/**
+*.d.ts
+
+# Nx/Builds
+**/dts/
+**/lib/
+**/esm/

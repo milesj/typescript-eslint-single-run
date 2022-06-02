@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": ["apps/**/*", "packages/**/*", "scripts/**/*"],
+  "exclude": [
+    "**/cjs/**/*",
+    "**/dts/**/*",
+    "**/esm/**/*",
+    "**/lib/**/*",
+    "**/mjs/**/*",
+    "**/node_modules/**/*",
+    "**/android/**/*",
+    "**/ios/**/*"
+  ]
+}

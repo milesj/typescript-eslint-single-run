@@ -1,0 +1,9 @@
+{
+  "name": "typescript-eslint-single-run",
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-beemo": "^2.1.1",
+    "prettier": "^2.6.2",
+    "tsconfig-paths": "^4.0.0"
+  }
+}

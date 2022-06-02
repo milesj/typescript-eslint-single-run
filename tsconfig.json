@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.projectOptions.json",
+  "include": [],
+  "files": [],
+  "references": []
+}
