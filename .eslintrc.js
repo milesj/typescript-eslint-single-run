@@ -62,5 +62,10 @@ module.exports = {
     'no-magic-numbers': 'off',
     'react/self-closing-comp': 'off',
     'simple-import-sort/imports': 'off',
+    
+    'import/no-deprecated': 'off',
+    'import/named': 'off',
+    'import/no-named-as-default': 'off',
+    'import/no-named-as-default-member': 'off',
   },
 };
